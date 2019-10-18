@@ -9,6 +9,15 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.css$/,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    'style-loader',
+                    // Translates CSS into CommonJS
+                    'css-loader',
+                ],
+            },
+            {
                 test: /\.less$/,
                 use: [
                     // Creates `style` nodes from JS strings

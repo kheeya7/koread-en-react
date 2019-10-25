@@ -1,11 +1,11 @@
 import React from 'react'
-import { Navbar, Form, InputGroup, Nav, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Form, Container, Nav, FormControl, Button } from 'react-bootstrap'
 
 export default class NavView extends React.PureComponent {
 
     render() {
         return (
-            <div>
+            <Container>
                 <Navbar className="bg-light ">
                     <Navbar.Brand href="#home">Korea Depart</Navbar.Brand>
                     <Form inline>
@@ -36,7 +36,7 @@ export default class NavView extends React.PureComponent {
                         <Nav.Link eventKey="link-4">CERT's FOOD</Nav.Link>
                     </Nav.Item>
                 </Nav>
-            </div >
+            </Container>
         )
     }
 }
